@@ -4,7 +4,9 @@ ADD . /src
 
 WORKDIR /src
 
-EXPOSE 3000
+ENV PORT=80
+
+EXPOSE 80
 
 RUN npm install
 # RUN npm test
