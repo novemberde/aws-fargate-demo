@@ -1,0 +1,13 @@
+version: '2'
+services:
+  test:
+    image: wordpress
+    ports:
+      - "80:80"
+    logging:
+      driver: awslogs
+      options:
+        awslogs-group: awslogs-prefix
+        awslogs-region: us-east-1
+        awslogs-stream-prefix: wordpress
+        
