@@ -1,0 +1,5 @@
+apps:
+  - script   : 'bin/app.js'
+    name     : 'WEB-APP'
+    exec_mode: 'cluster'
+    instances: 2
