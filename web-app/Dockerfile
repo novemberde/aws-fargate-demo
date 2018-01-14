@@ -1,4 +1,6 @@
-FROM novemberde/node-pm2
+FROM node
+
+RUN npm i -g pm2
 
 ADD . /src
 
