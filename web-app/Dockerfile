@@ -1,6 +1,4 @@
-FROM node
-
-RUN npm i -g pm2
+FROM keymetrics/pm2
 
 ADD . /src
 
