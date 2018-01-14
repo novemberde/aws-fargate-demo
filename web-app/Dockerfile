@@ -11,4 +11,4 @@ EXPOSE 80
 RUN npm install
 # RUN npm test
 
-CMD ['pm2-docker', 'bin/www'];
+CMD ['pm2-runtime', 'bin/www'];
