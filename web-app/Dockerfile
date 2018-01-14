@@ -13,4 +13,4 @@ EXPOSE 80
 RUN npm install
 # RUN npm test
 
-CMD ['pm2-runtime', 'process.yml'];
+CMD ["pm2-runtime", "process.yml"];
