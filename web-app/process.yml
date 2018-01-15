@@ -1,9 +1,6 @@
 apps:
-  - script   : 'bin/app.js'
+  - script   : 'bin/www'
+    cwd      : '/src'
     name     : 'WEB-APP'
     exec_mode: 'cluster'
     instances: 2
-    env:
-      NODE_ENV: development
-    env_production: 
-      NODE_ENV: production

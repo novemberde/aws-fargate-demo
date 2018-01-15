@@ -10,7 +10,9 @@ ENV PORT=80
 
 EXPOSE 80
 
+VOLUME /var/lib/node
+VOLUME /root/.pm2
+
 RUN npm install
-# RUN npm test
 
 CMD ["pm2-runtime", "process.yml"]
