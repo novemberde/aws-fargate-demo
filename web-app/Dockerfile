@@ -2,6 +2,8 @@ FROM keymetrics/pm2
 
 ADD . /src
 
+ENV PATH /usr/local/bin:$PATH
+
 WORKDIR /src
 
 ENV PORT=80
